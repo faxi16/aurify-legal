@@ -3,89 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aurify - Gizlilik Politikası ve KVKK</title>
+    <title>Aurify - Gizlilik Politikası ve KVKK Aydınlatma Metni</title>
     <style>
         :root {
-            --primary: #6750A4;
+            --primary: #D0BCFF;
+            --primary-accent: #6750A4;
             --background: #0F0F13;
             --surface: #1C1B20;
             --on-surface: #E6E1E5;
             --on-surface-variant: #CAC4D0;
+            --border: rgba(255, 255, 255, 0.08);
         }
+        * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--background);
             color: var(--on-surface);
-            line-height: 1.6;
+            line-height: 1.7;
             margin: 0;
-            padding: 24px;
+            padding: 32px 16px;
         }
         .container {
-            max-width: 760px;
+            max-width: 820px;
             margin: 0 auto;
             background: var(--surface);
-            padding: 36px;
-            border-radius: 16px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+            box-shadow: 0 12px 36px rgba(0,0,0,0.5);
         }
         h1 {
             color: var(--primary);
-            font-size: 28px;
+            font-size: 30px;
+            margin-top: 0;
             margin-bottom: 8px;
+            letter-spacing: -0.5px;
         }
         h2 {
             font-size: 20px;
-            margin-top: 28px;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 16px;
+            margin-top: 20px;
             color: var(--on-surface);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            padding-bottom: 6px;
         }
         p, li {
             color: var(--on-surface-variant);
             font-size: 15px;
         }
-        ul {
-            padding-left: 20px;
+        ul, ol {
+            padding-left: 24px;
+            margin-bottom: 16px;
         }
+        li { margin-bottom: 6px; }
         .last-updated {
             font-size: 13px;
-            color: #888;
+            color: #9E9E9E;
             margin-bottom: 24px;
+            display: inline-block;
+            background: rgba(255,255,255,0.05);
+            padding: 4px 12px;
+            border-radius: 12px;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid var(--border);
+            padding: 12px;
+            text-align: left;
+        }
+        .data-table th {
+            background: rgba(255,255,255,0.04);
+            color: var(--primary);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Aurify Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
-        <div class="last-updated">Son Güncelleme: Ağustos 2026</div>
+        <div class="last-updated">Son Güncelleme Tarihi: 23 Ağustos 2026</div>
 
-        <p><strong>Aurify</strong> olarak kişisel verilerinizin güvenliğine ve gizliliğine büyük önem veriyoruz. 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında verilerinizin nasıl işlendiği aşağıda açıklanmıştır.</p>
+        <p><strong>Aurify</strong> ("Veri Sorumlusu", "Uygulama"), 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve uluslararası veri koruma standartları (GDPR) uyarınca, kullanıcılarımızın kişisel verilerinin gizliliğini ve güvenliğini en üst düzeyde korumayı taahhüt eder. Bu metin, verilerinizin nasıl toplandığını, işlendiğini, korunduğunu ve haklarınızı açıklamaktadır.</p>
 
-        <h2>1. Toplanan Veriler ve İzinler</h2>
+        <h2>1. Toplanan Kişisel Veriler ve İşleme Amaçları</h2>
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Veri Türü</th>
+                    <th>Açıklama &amp; Toplanma Nedeni</th>
+                    <th>Hukuki Sebep</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Hassas Konum (GPS)</strong></td>
+                    <td>Anıların gerçek dünyadaki doğru koordinatlara bırakılması, yakındaki anıların haritada gösterilmesi ve AR ile yönlendirilmesi.</td>
+                    <td>Açık Rıza / Sözleşmenin İfası</td>
+                </tr>
+                <tr>
+                    <td><strong>Kamera &amp; Görseller</strong></td>
+                    <td>AR sahnesini algılama (yüzey ve referans görsel takibi), anı fotoğrafları ve profil resmi yükleme.</td>
+                    <td>Açık Rıza / Meşru Menfaat</td>
+                </tr>
+                <tr>
+                    <td><strong>Mikrofon &amp; Ses</strong></td>
+                    <td>Sesli anı bırakma özelliğini kullandığınızda ses kaydı yapılması.</td>
+                    <td>Açık Rıza</td>
+                </tr>
+                <tr>
+                    <td><strong>Hesap Bilgileri</strong></td>
+                    <td>Kullanıcı adı, e-posta adresi, profil biyografisi ve şifrelenmiş kimlik doğrulama verileri.</td>
+                    <td>Sözleşmenin Kurulması</td>
+                </tr>
+                <tr>
+                    <td><strong>Cihaz &amp; Log Verileri</strong></td>
+                    <td>Cihaz modeli, işletim sistemi sürümü, çökme raporları ve güvenlik logları.</td>
+                    <td>Meşru Menfaat / Hizmet Güvenliği</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>2. Kamera ve AR (Artırılmış Gerçeklik) Verilerinin Gizliliği</h2>
+        <p>Aurify, AR teknolojisi (Google ARCore) kullanarak çevrenizdeki düzlemleri ve görselleri algılar. <strong>Kamera sensöründen alınan anlık video akışı tamamen cihazınızda (on-device) anlık olarak işlenir; siz fotoğraf çekmedikçe veya video kaydetmedikçe kamera görüntüsü sunucularımıza iletilmez veya kaydedilmez.</strong></p>
+
+        <h2>3. Konum Verilerinin Kullanımı</h2>
+        <p>Aurify konum tabanlı bir uygulamadır. Konum veriniz (enlem/boylam) sadece uygulama açıkken ve AR/Harita özelliklerini kullanırken toplanır. Konumunuz üçüncü taraf reklam şirketlerine satılmaz veya pazarlama amacıyla paylaşılmaz.</p>
+
+        <h2>4. Verilerin Aktarılması ve Güvenliği</h2>
         <ul>
-            <li><strong>Konum Bilgisi (GPS):</strong> Anıların harita üzerinde doğru konuma bırakılması, etrafınızdaki anıların listelenmesi ve AR çapa koordinatlarının belirlenmesi için konum veriniz işlenir.</li>
-            <li><strong>Kamera ve Görseller:</strong> Artırılmış gerçeklik (AR) deneyimi, referans görsel taraması ve profil/içerik fotoğrafları için kamera erişimi kullanılır. Kamera görüntüsü canlı ortamda anlık işlenir ve izniniz olmadan saklanmaz.</li>
-            <li><strong>Mikrofon ve Ses:</strong> Sesli anı bırakma özelliğini kullandığınızda ses kaydı alınır.</li>
-            <li><strong>Hesap Bilgileri:</strong> Kayıt sırasında ad, kullanıcı adı, e-posta adresi ve şifre gibi temel bilgileriniz güvenli bir şekilde saklanır.</li>
+            <li>Kişisel verileriniz, güvenli bulut altyapılarında (Google Cloud / Firebase) en yüksek şifreleme standartları (TLS/SSL ve AES-256) ile saklanır.</li>
+            <li>Verileriniz, yalnızca yasal zorunluluklar halinde yetkili adli veya idari mercilerle paylaşılır.</li>
         </ul>
 
-        <h2>2. Verilerin İşlenme Amaçları</h2>
-        <p>Kişisel verileriniz;</p>
+        <h2>5. Veri Saklama ve Hesap / Veri Silme Hakkı (Google Play Uyumlu)</h2>
+        <p>Kullanıcılarımız diledikleri zaman hesaplarını ve bu hesaba bağlı tüm verilerini kalıcı olarak silme hakkına sahiptir:</p>
         <ul>
-            <li>AR ve harita tabanlı sosyal deneyimin sunulması,</li>
-            <li>Kullanıcı hesaplarının yönetilmesi ve güvenliğinin sağlanması,</li>
-            <li>Topluluk kurallarının korunması ve içerik moderasyonu,</li>
-            <li>Hizmet kalitesinin artırılması ve teknik destek sağlanması amacıyla işlenir.</li>
+            <li><strong>Uygulama İçi Silme:</strong> Profil $\rightarrow$ Profili Düzenle $\rightarrow$ "Hesabı Sil" seçeneği ile tüm anılarınız, fotoğraflarınız, yorumlarınız ve kişisel verileriniz sistemlerimizden anında ve geri döndürülemez şekilde silinir.</li>
+            <li><strong>Destek Üzerinden Silme:</strong> Uygulama içi Destek menüsünden hesap silme talebi iletebilirsiniz.</li>
         </ul>
 
-        <h2>3. Veri Güvenliği ve Paylaşımı</h2>
-        <p>Kişisel verileriniz yasal zorunluluklar haricinde üçüncü taraflarla ticari amaçla paylaşılmaz veya satılmaz. Verileriniz endüstri standardı şifreleme yöntemleriyle güvenli sunucularda korunmaktadır.</p>
+        <h2>6. KVKK 11. Madde Kapsamındaki Haklarınız</h2>
+        <p>KVKK uyarınca herkes veri sorumlusuna başvurarak;</p>
+        <ul>
+            <li>Kişisel verisinin işlenip işlenmediğini öğrenme,</li>
+            <li>İşlenmişse buna ilişkin bilgi talep etme,</li>
+            <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
+            <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>
+            <li>Verilerin silinmesini veya yok edilmesini talep etme haklarına sahiptir.</li>
+        </ul>
 
-        <h2>4. Kullanıcı Hakları ve Hesap/Veri Silme</h2>
-        <p>KVKK'nın 11. maddesi uyarınca kullanıcılar diledikleri zaman verilerinin silinmesini, güncellenmesini veya düzeltilmesini talep edebilirler. Profil ayarlarınız üzerinden veya uygulama içi destek kanalından hesabınızı ve tüm anılarınızı kalıcı olarak silebilirsiniz.</p>
-
-        <h2>5. İletişim</h2>
-        <p>Gizlilik politikamız veya kişisel verilerinizle ilgili her türlü soru için uygulama içi Geri Bildirim menüsü üzerinden bizimle iletişime geçebilirsiniz.</p>
+        <h2>7. İletişim</h2>
+        <p>Gizlilik haklarınızla ilgili her türlü soru ve başvuru için uygulama içi <strong>Geri Bildirim &amp; Destek</strong> modülünü kullanabilirsiniz.</p>
     </div>
 </body>
 </html>
